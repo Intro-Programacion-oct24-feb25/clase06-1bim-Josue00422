@@ -18,6 +18,8 @@ public class EjemploCadenas02 {
         // 
         entrada.useLocale(Locale.US);
         String cadenaFinal = "Datos Ingresados\n";
+        // el string format  me deja acomular los datos obtenidos por teclado
+        //el string format me sirve para acomular valores dentro de cadenas
         
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
