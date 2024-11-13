@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Comercio3 {
+public class Comercio4 {
     
     public static void main(String[] args) {
         
@@ -51,29 +51,10 @@ public class Comercio3 {
          System.out.println("Ingrese el porcentaje del seguro");
         porcentajeSeguro = entrada.nextDouble();
          // opción 1
-        if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
-            porcentajeSeguro = porcentajeSeguro + 0;
-        } else {
-            porcentajeSeguro = 10;
-            // este meodo si funcion ya que para todos los valores entre 1 y 15 
-            // me da el porcentaje corresponditen pero si se sale del alcanze
-            //me da el porcentaje 10
-        }
+        
+        
 
-        // opción 2
-        if (porcentajeSeguro > 15) {
-            porcentajeSeguro = 10;
-            // si funciona ya que si los valores son menores a 15
-            //me da el valor del porcentaje pero si este es mayor me da 10 
-        }
-
-         // opción 3
-        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
-            porcentajeSeguro = 10;
-            // este porceso tambien funciona ya que si el porcentajes es mayor
-            // a 1 o menor a 15 me da el valor puesto
-            // pero si este se pasa el valor va  a ser 10
-        }
+       
 
         // opción 4
         if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
@@ -101,7 +82,7 @@ public class Comercio3 {
         }
         
        
-       
+        porcentajeSeguro = (sueldoBasico * 8)/100;
         sueldoFinal = porcentajeSeguro + bono + sueldoBasico;
         
         System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
