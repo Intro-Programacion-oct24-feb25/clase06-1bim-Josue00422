@@ -55,6 +55,7 @@ public class Comercio {
         if (productividad<=30){
             bono = 25; // $25
         }else{
+            //condcionales aninados
             if (productividad>=31 && productividad<80){
                 bono = 50;
             }else{
@@ -69,8 +70,8 @@ public class Comercio {
         }
         
        
-        adicionalSeguro = (sueldoBasico * 8)/100;
-        sueldoFinal = adicionalSeguro + bono + sueldoBasico;
+        porcentajeSeguro = (sueldoBasico * 8)/100;
+        sueldoFinal = porcentajeSeguro + bono + sueldoBasico;
         
         System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
                 + "Nombres: %s\n"
@@ -89,7 +90,7 @@ public class Comercio {
                 numeroProductos,
                 productividad,
                 bono,
-                adicionalSeguro,
+                porcentajeSeguro,
                 sueldoFinal);
         
         
