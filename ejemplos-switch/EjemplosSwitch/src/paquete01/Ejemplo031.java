@@ -24,9 +24,11 @@ public class Ejemplo031 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese el nombre de una ciudad del Ecuador");
+        System.out.println("Ingrese el nombre del/a estudinate");
         String nombre = entrada.nextLine();
-        // nombre = "atacames"
+        System.out.println("Ingrese el apellido del/a estudinate");
+        String apellido = entrada.nextLine();
+      
         char valor = nombre.charAt(0); // obtener el primer caracter de una
         // ANA DIAZ con edad 19, es estudiante de UTPL
 
