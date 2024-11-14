@@ -67,6 +67,22 @@ public class Ejemplo021 {
             case 8:
                 mesCadena ="agosto";
                 break;
+            case 9:
+                mesCadena ="septiembre";
+                break;
+            case 10:
+               mesCadena ="octubre";
+                break;
+            case 11:
+               mesCadena ="noviembre";
+                break;
+            case 12:
+                mesCadena ="diciembre";
+                break;
+            default:
+                System.out.println("opcion incorrecta");
+                break;
+                
                 }
                     
                 System.out.printf("Usted a nacido el %d de %s de %d\n",
