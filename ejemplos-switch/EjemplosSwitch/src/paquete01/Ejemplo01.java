@@ -22,27 +22,25 @@ public class Ejemplo01 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese el nombre del día de la semana");
         String cadena = entrada.nextLine();
+        cadena = cadena.toLowerCase();
         
         switch(cadena){
-            case "Lunes":
+           
             case "lunes":
-            case "LUNES":    
                 System.out.printf("%s", cadena.toUpperCase());
                 break;
             
-            case "Martes":
-            case "MARTES":
+            
+          
             case "martes":
                 System.out.printf("%s", cadena.toUpperCase());
                 break;
-            case "Miercoles":
-            case "MIERCOLES":
+ 
             case "miercoles":
                 System.out.printf("%s", cadena.toUpperCase());
                 break;     
             
-            case "Viernes":
-            case "VIERNES":
+
             case "viernes":
                 System.out.printf("%s", cadena.toUpperCase());
                 break;
