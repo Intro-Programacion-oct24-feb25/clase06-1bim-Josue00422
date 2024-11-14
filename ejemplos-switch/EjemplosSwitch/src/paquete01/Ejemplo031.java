@@ -32,18 +32,17 @@ public class Ejemplo031 {
         int edad = entrada.nextInt();
         entrada.nextLine();
         System.out.println("ingresa la universidad");
-        System.out.println("Ingrese el nombre del/a estudinate");
-        String unniversidad = entrada.nextLine();
-        String inicial1 = nombre.toLowerCase();
+        String universidad = entrada.nextLine();
+        String inicial = nombre.toLowerCase();
         
                 
       
-        char incial1 = nombre.charAt(0); // obtener el primer caracter de una
+        char incial2 = nombre.charAt(0); // obtener el primer caracter de una
         // ANA DIAZ con edad 19, es estudiante de UTPL
 
         // luis vera con edad 19, es estudiante de UNL
            
-        switch(inicial){
+        switch(incial2){
             case 'a':
             case 'e':
             case 'i':
@@ -54,9 +53,8 @@ public class Ejemplo031 {
                 break;
             
             default:
-                System.out.println("opción incorrecta; ninguna de las "
-                        + "anteriores");
-                break;
+               System.out.printf(" %s %s con edad %d es un estudiamte de %s", 
+                        nombre.toUpperCase(),apellido.toUpperCase(),edad,universidad);
                 
         }
         
