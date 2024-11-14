@@ -30,50 +30,50 @@ public class Ejemplo021 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
+        int diaNacimiento;
+        int mesNacimiento;
+        int yearNacimiento;
 
-        System.out.println("Ingrese el número de día de la semana");
-        int numeroDia = entrada.nextInt();
-
-        switch (numeroDia) {
+        System.out.println("Ingrese el  día que nacio");
+          diaNacimiento = entrada.nextInt();
+        System.out.println("Ingrese el mes que nacio");
+          mesNacimiento = entrada.nextInt();
+        System.out.println("Ingrese el año en que nacio");
+        yearNacimiento = entrada.nextInt();
+        String mesCadena = "";
+        
+        switch (mesNacimiento) {
             case 1:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Lunes");
+                mesCadena ="enero";
                 break;
-
-            case 2:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Martes");
+            case 2 :
+                mesCadena = "febrero";
                 break;
-
             case 3:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Miércoles");
+                mesCadena ="marzo";
                 break;
-
             case 4:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Jueves");
+                mesCadena ="abril";
                 break;
-
             case 5:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Viernes");
+                mesCadena ="mayo";
                 break;
-
             case 6:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Sábado");
+                mesCadena ="juinio";
                 break;
-
             case 7:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Domingo");
+                mesCadena ="julio";
+                break; 
+            case 8:
+                mesCadena ="agosto";
                 break;
+                }
+                    
+                System.out.printf("Usted a nacido el %d de %s de %d\n",
+                        diaNacimiento,mesCadena,yearNacimiento); 
+                
 
-            default:
-                System.out.println("Opción incorrecta");
-                break;
-        }
+      
 
     }
 }
