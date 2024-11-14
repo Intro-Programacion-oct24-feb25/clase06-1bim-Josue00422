@@ -25,23 +25,31 @@ public class Ejemplo01 {
         
         switch(cadena){
             case "Lunes":
-                System.out.printf("%s", cadena);
+            case "lunes":
+            case "LUNES":    
+                System.out.printf("%s", cadena.toUpperCase());
                 break;
             
             case "Martes":
+            case "MARTES":
             case "martes":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s", cadena.toUpperCase());
                 break;
+            case "Miercoles":
+            case "MIERCOLES":
+            case "miercoles":
+                System.out.printf("%s", cadena.toUpperCase());
+                break;     
             
             case "Viernes":
             case "VIERNES":
             case "viernes":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s", cadena.toUpperCase());
                 break;
             
             case "Domingo":
                 System.out.printf("%s, es el séptimo día "
-                        + "de la semana", cadena);
+                        + "de la semana", cadena.toUpperCase());
                 break;
                 
             default:
